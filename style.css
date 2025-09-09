@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  background-color: #fefefe;
+  padding: 0%;
+}
+
+/****************   Nav Section **********************/
+nav {
+	background-color: #bdb2ff;
+  border: 2px solid #CCCCFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: #edf2fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/*********** Splash Page ************************/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Quintessential", serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  color: #9247aa;
+  margin-bottom: 1rem;
+}
+
+header img {
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.address {
+  font-style: italic;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  margin-top: 0.5rem;
+}
+
+.tagline {
+  font-style: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  color: #220ba3;
+  margin-top: 0.5rem;
+}
+
+/************* Sections ********************/
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 2px solid #CCCCFF;
+}
+
+section h2 {
+  font-family: "Mako", sans-serif;  
+  color: #634fda;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  font-family: "Mako", sans-serif;  
+  color: #731695;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+section dl {
+  display: grid;
+	gap: 0.5rem 1rem;
+	grid-template-columns: 1fr 2fr;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fbe5b8;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+section ul {
+  list-style-type: square;
+  list-style-position: inside;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fbe5b8;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+section a {
+  color: #6e97f7;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #7166d3;
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  background-color:#b6ccfe;
+  border: 1px solid #ddd;
+  border-radius: 22px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 1rem;
+  max-width: 320px;
+  transition: 0.3s;
+  margin: auto;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 2rem;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2rem auto;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #f9f9ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.one-col label {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+header h1 {
+  font-family: "Quintessential", serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  color: #9247aa;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.address {
+  font-style: italic;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  margin-top: 0.5rem;
+  text-align: center;
+}
